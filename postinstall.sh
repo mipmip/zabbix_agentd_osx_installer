@@ -17,7 +17,9 @@ sudo dscl /Local/Default -create /Users/zabbix Password \*
 #Create needed directories 
 sudo mkdir -p /var/run/zabbix-agent
 sudo mkdir -p /var/log/zabbix-agent
-#sudo mkdir -p /usr/local/etc/zabbix
+sudo mkdir -p /usr/local/bin
+sudo mkdir -p /usr/local/sbin
+sudo mkdir -p /usr/local/etc/zabbix
 
 sudo chown -Rf zabbix:zabbix /var/run/zabbix-agent
 sudo chown -Rf zabbix:zabbix /var/log/zabbix-agent
