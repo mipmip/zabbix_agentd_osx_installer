@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Label</key>
+		<string>com.zabbix.zabbix.agentd</string>
+		<key>OnDemand</key>
+		<false/>
+		<key>UserName</key>
+		<string>zabbix</string>
+		<key>GroupName</key>
+		<string>zabbix</string>
+		<key>ProgramArguments</key>
+		<array>
+			<string>/usr/local/sbin/zabbix_agentd</string>
+			<string>--config</string>
+			<string>/etc/zabbix_agentd.conf</string>
+		</array>
+	</dict>
+</plist>
