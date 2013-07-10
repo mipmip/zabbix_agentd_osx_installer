@@ -17,14 +17,20 @@ sudo dscl /Local/Default -create /Users/zabbix Password \*
 #Create needed directories 
 sudo mkdir -p /var/run/zabbix-agent
 sudo mkdir -p /var/log/zabbix-agent
+#sudo mkdir -p /usr/local/etc/zabbix
+
 sudo chown -Rf zabbix:zabbix /var/run/zabbix-agent
 sudo chown -Rf zabbix:zabbix /var/log/zabbix-agent
 
 sudo chown root:wheel /Library/LaunchDaemons/com.zabbix.zabbix_agentd.plist
 sudo chown root:wheel /usr/local/etc/zabbix/zabbix_agentd.conf
-sudo chmod 755 root:wheel /usr/local/etc/zabbix/zabbix_agentd.conf
 
-sudo chown root:wheel /usr/local/sbin/zabbix_agentd
-sudo chown root:wheel /usr/local/sbin/zabbix_agent
-sudo chown root:wheel /usr/local/bin/zabbix_get
-sudo chown root:wheel /usr/local/bin/zabbix_sender
+sudo chown -Rf root:wheel /usr/local/sbin
+sudo chown -Rf root:wheel /usr/local/bin
+sudo chmod -Rf 755 /usr/local/bin
+sudo chmod -Rf 755 /usr/local/sbin
+
+sudo chmod 755 /usr/local/etc/zabbix
+#sudo kill -9 `ps aux | grep zabbix_agentd | cut -f11 -d" "`
+#sudo kill -9 `ps -aef | grep zabbix_agentd | grep -v grep | awk '{print $2}'`
+#sudo rm -Rf /tmp/zabbix*

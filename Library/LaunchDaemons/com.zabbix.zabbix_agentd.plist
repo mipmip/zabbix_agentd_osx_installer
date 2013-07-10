@@ -3,9 +3,9 @@
 <plist version="1.0">
 	<dict>
 		<key>Label</key>
-		<string>com.zabbix.zabbix.agentd</string>
-		<key>OnDemand</key>
-		<false/>
+		<string>com.zabbix.zabbix_agentd</string>
+		<key>RunAtLoad</key>
+		<true/>
 		<key>UserName</key>
 		<string>zabbix</string>
 		<key>GroupName</key>
@@ -13,8 +13,8 @@
 		<key>ProgramArguments</key>
 		<array>
 			<string>/usr/local/sbin/zabbix_agentd</string>
-			<string>--config</string>
-			<string>/etc/zabbix_agentd.conf</string>
+			<string>-c</string>
+			<string>/usr/local/etc/zabbix/zabbix_agentd.conf</string>
 		</array>
 	</dict>
 </plist>
