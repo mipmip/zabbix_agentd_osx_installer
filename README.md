@@ -1,8 +1,7 @@
 # Zabbix_agentd installer for Mac OS X
 
-These are the source files for packaging a binary zabbix_agentd. 
-
-The installer itself can be downloaded at the releases: https://github.com/mipmip/zabbix_agentd_osx_installer/releases
+These are the source files for packaging a binary zabbix_agentd. The installer itself can be downloaded at the 
+releases: https://github.com/mipmip/zabbix_agentd_osx_installer/releases
 
 ![image](http://picdrop.t3lab.com/iWcWUQmdaq.png)
 
