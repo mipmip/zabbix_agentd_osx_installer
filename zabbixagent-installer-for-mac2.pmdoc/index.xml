@@ -1,4 +1,4 @@
-<pkmkdoc spec="1.12"><properties><title>Zabbix Agentd installer</title><build>/Users/pim/Desktop/Zabbix Agentd installer.pkg</build><organization>com.lingewoud</organization><userSees ui="easy"/><min-target os="3"/><domain system="true"/></properties><distribution><versions min-spec="1.000000"/><scripts></scripts></distribution><contents><choice title="zabbix_agentd" id="choice2" starts_selected="true" starts_enabled="true" starts_hidden="false"><pkgref id="com.lingewoud.zabbixAgentdInstaller.zabbix_agentd-1.pkg"/><pkgref id="com.lingewoud.zabbixAgentdInstaller.zabbix_agent.pkg"/><pkgref id="com.lingewoud.zabbixAgentdInstaller.zabbix_sender.pkg"/><pkgref id="com.lingewoud.zabbixAgentdInstaller.zabbix_get.pkg"/><pkgref id="com.lingewoud.zabbixAgentdInstaller.zabbix_agentd.pkg"/><pkgref id="com.lingewoud.zabbixAgentdInstaller.com.zabbix.zabbix_agentd.pkg"/></choice></contents><resources bg-scale="none" bg-align="topleft"><locale lang="nl"><resource mime-type="text/rtf" kind="embedded" type="license"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+<pkmkdoc spec="1.12"><properties><title>Zabbix Agentd for OSX</title><build>/Users/pim/Desktop/Zabbix Agentd installer.pkg</build><organization>com.lingewoud</organization><userSees ui="easy"/><min-target os="3"/><domain system="true"/></properties><distribution><versions min-spec="1.000000"/><scripts></scripts></distribution><contents><choice title="zabbix_agentd" id="choice2" starts_selected="true" starts_enabled="true" starts_hidden="false"><pkgref id="com.lingewoud.zabbixAgentdForOsx.zabbix_agentd.pkg"/><pkgref id="com.lingewoud.zabbixAgentdForOsx.zabbix_agent.pkg"/><pkgref id="com.lingewoud.zabbixAgentdForOsx.zabbix_sender.pkg"/><pkgref id="com.lingewoud.zabbixAgentdForOsx.zabbix_get.pkg"/><pkgref id="com.lingewoud.zabbixAgentdForOsx.zabbix_agentd-1.pkg"/><pkgref id="com.lingewoud.zabbixAgentdForOsx.com.zabbix.zabbix_agentd.pkg"/></choice></contents><resources bg-scale="none" bg-align="topleft"><locale lang="nl"><resource mime-type="text/rtf" kind="embedded" type="license"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
 {\fonttbl\f0\fnil\fcharset0 LucidaGrande;\f1\fmodern\fcharset0 Courier;}
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
@@ -349,15 +349,21 @@ This General Public License does not permit incorporating your program into\
 proprietary programs.  If your program is a subroutine library, you may\
 consider it more useful to permit linking proprietary applications with the\
 library.  If this is what you want to do, use the GNU Lesser General\
-Public License instead of this License.}]]></resource><resource mime-type="text/rtf" kind="embedded" type="welcome"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+Public License instead of this License.}]]></resource><resource mime-type="text/rtf" kind="embedded" type="welcome"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
 {\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs26 \cf0 This installs the Zabbix Agent for Mac OS X. \
 \
-Binaries come from zabbix.com: \
-https://support.zabbix.com/browse/ZBXNEXT-1348}]]></resource><resource mime-type="text/rtf" kind="embedded" type="conclusion"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+Sources come from \
+{\field{\*\fldinst{HYPERLINK "http://www.zabbix.com/download.php"}}{\fldrslt http://www.zabbix.com/download.php}}\
+\
+The installer sources are \
+{\field{\*\fldinst{HYPERLINK "https://github.com/mipmip/zabbix_agentd_osx_installer"}}{\fldrslt https://github.com/mipmip/zabbix_agentd_osx_installer}}\
+\
+This build and installer are done by Pim Snel\
+{\field{\*\fldinst{HYPERLINK "http://www.lingewoud.com/"}}{\fldrslt http://www.lingewoud.com}}}]]></resource><resource mime-type="text/rtf" kind="embedded" type="conclusion"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
 {\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
@@ -371,4 +377,17 @@ To start the zabbix-agentd manually execute:\
 \fs20 \cf0 sudo launchctl load /Library/LaunchDaemons/com.zabbix.zabbix_agentd.plist
 \fs26 \
 \
-This installer was created by Lingewoud.}]]></resource></locale></resources><flags/><item type="file">01zabbix.xml</item><item type="file">02zabbix.xml</item><item type="file">03zabbix.xml</item><item type="file">04zabbix.xml</item><item type="file">05zabbix.xml</item><item type="file">06com.xml</item><mod>properties.title</mod><mod>properties.anywhereDomain</mod><mod>properties.systemDomain</mod></pkmkdoc>
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Thanks,\
+Pim Snel\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+{\field{\*\fldinst{HYPERLINK "http://www.lingewoud.com/"}}{\fldrslt \cf0 http://www.lingewoud.com}}}]]></resource></locale></resources><flags/><item type="file">01zabbix.xml</item><item type="file">02zabbix.xml</item><item type="file">03zabbix.xml</item><item type="file">04zabbix.xml</item><item type="file">05zabbix.xml</item><item type="file">06com.xml</item><mod>properties.title</mod><mod>properties.anywhereDomain</mod><mod>properties.systemDomain</mod></pkmkdoc>

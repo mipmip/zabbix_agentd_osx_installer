@@ -26,6 +26,7 @@ sudo chown -Rf zabbix:zabbix /var/log/zabbix-agent
 
 sudo chown root:wheel /Library/LaunchDaemons/com.zabbix.zabbix_agentd.plist
 sudo chown root:wheel /usr/local/etc/zabbix/zabbix_agentd.conf
+sudo chown root:wheel /usr/local/etc/zabbix_agentd.conf
 
 sudo chown -Rf root:wheel /usr/local/sbin
 sudo chown -Rf root:wheel /usr/local/bin

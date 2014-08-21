@@ -8,7 +8,7 @@ releases: https://github.com/mipmip/zabbix_agentd_osx_installer/releases
 ## Requirements
 
 * x64 processor
-* Mac OS X version = 10.6, 10.7, 10.8
+* Mac OS X version = 10.6, 10.7, 10.8, 10.9
 
 ## Configuration
 
