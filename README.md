@@ -33,4 +33,11 @@ Launchctl unload does not work. Use the command below.
 sudo kill -9 `ps -aef | grep zabbix_agentd | grep -v grep | awk '{print $2}'`
 ```
 
+## Build a new zabbix agentd installer
 
+Befor you can build an installer plg you shoud have **xcode command line tools** and **PackageMaker.app** installed.
+
+1. Download the source code from http://zabbix.com tarball
+2. Clone this repository
+3. Cd to the installer source code
+4. Execute ```rake create[/path/to/zabbix_source_code.tar.bz]```
